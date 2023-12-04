@@ -1,6 +1,6 @@
 [package]
 name = "prometrics"
-version = "0.1.13"
+version = "0.2.0"
 authors = ["Takeru Ohta <phjgt308@gmail.com>"]
 description = "Client library for exposing prometheus metrics"
 homepage = "https://github.com/sile/prometrics"
@@ -16,8 +16,7 @@ codecov = {repository = "sile/prometrics"}
 [dependencies]
 atomic_immut = "0.1"
 lazy_static = "1"
-trackable = "0.2"
+trackable = "1"
 
 [target.'cfg(target_os="linux")'.dependencies]
 libc = "0.2"
-procinfo = "0.4"

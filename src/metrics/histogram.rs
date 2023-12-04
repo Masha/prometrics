@@ -312,6 +312,7 @@ impl Collect for HistogramCollector {
 }
 
 #[derive(Debug)]
+#[allow(dead_code)]
 struct Inner {
     bucket_name: MetricName,
     labels: Labels,

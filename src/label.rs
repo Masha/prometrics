@@ -206,6 +206,7 @@ impl<'a> Deref for LabelsMut<'a> {
 
 /// An iterator over the labels of a `Labels`.
 #[derive(Debug)]
+#[allow(dead_code)]
 pub struct Iter<'a> {
     labels: std::sync::Arc<Vec<Label>>,
     inner: std::slice::Iter<'a, Label>,
